@@ -14,9 +14,17 @@
 
 @implementation ViewController
 
+- (NSUInteger)numberOfPagesInBookPageView:(BookPageView *)bookPageView
+{
+    return 2;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _bookPageView = [[BookPageView alloc] init];
+    _bookPageView.dataSource = self;
+    [self.view addSubview:_bookPageView];
+    [_bookPageView showPageNumber];
 }
 
 - (void)didReceiveMemoryWarning {

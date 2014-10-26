@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookPageView.h"
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController <BookPageViewDataSource>
+
+@property (strong) BookPageView *bookPageView;
 
 @end
 

@@ -14,6 +14,7 @@
 		41B223BE19F5C7990069E4D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B223BD19F5C7990069E4D0 /* Images.xcassets */; };
 		41B223C119F5C7990069E4D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B223BF19F5C7990069E4D0 /* LaunchScreen.xib */; };
 		41B223CD19F5C7990069E4D0 /* BookPageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B223CC19F5C7990069E4D0 /* BookPageViewTests.m */; };
+		41B223D819F5C7C50069E4D0 /* BookPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B223D719F5C7C50069E4D0 /* BookPageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		41B223C619F5C7990069E4D0 /* BookPageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookPageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B223CB19F5C7990069E4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B223CC19F5C7990069E4D0 /* BookPageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookPageViewTests.m; sourceTree = "<group>"; };
+		41B223D619F5C7C50069E4D0 /* BookPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookPageView.h; sourceTree = "<group>"; };
+		41B223D719F5C7C50069E4D0 /* BookPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookPageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				41B223B519F5C7990069E4D0 /* AppDelegate.m */,
 				41B223B719F5C7990069E4D0 /* ViewController.h */,
 				41B223B819F5C7990069E4D0 /* ViewController.m */,
+				41B223D619F5C7C50069E4D0 /* BookPageView.h */,
+				41B223D719F5C7C50069E4D0 /* BookPageView.m */,
 				41B223BA19F5C7990069E4D0 /* Main.storyboard */,
 				41B223BD19F5C7990069E4D0 /* Images.xcassets */,
 				41B223BF19F5C7990069E4D0 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B223D819F5C7C50069E4D0 /* BookPageView.m in Sources */,
 				41B223B919F5C7990069E4D0 /* ViewController.m in Sources */,
 				41B223B619F5C7990069E4D0 /* AppDelegate.m in Sources */,
 				41B223B319F5C7990069E4D0 /* main.m in Sources */,
