@@ -16,10 +16,19 @@
 
 @end
 
-@interface BookPageView : UIView
+enum {
+    BookPageViewNavigationDirectionLeft ,
+    BookPageViewNavigationDirectionRight
+};
+typedef NSInteger BookPageViewNavigationDirection;
+
+@interface BookPageView : UIScrollView
 
 @property (weak) id <BookPageViewDataSource> dataSource;
+@property (nonatomic, readonly) BookPageViewNavigationDirection navigationDirection;
 
-- (void)showPageNumber;
+
+- (instancetype)initWithFrame:(CGRect)frame
+          navidationDirection:(BookPageViewNavigationDirection)navigationDirection;
 
 @end

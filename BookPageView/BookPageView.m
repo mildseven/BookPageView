@@ -11,10 +11,28 @@
 
 @implementation BookPageView
 
-
-- (void)showPageNumber
+- (instancetype)initWithFrame:(CGRect)frame
+          navidationDirection:(BookPageViewNavigationDirection)navigationDirection
 {
-    NSLog(@"%li", [self.dataSource numberOfPagesInBookPageView:self]);
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor redColor];
+        _navigationDirection = navigationDirection;
+    }
+    return self;
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    CGFloat heightOfSelf = self.frame.size.height;
+    CGFloat widthOfSelf = self.frame.size.width;
+    self.contentSize = CGSizeMake(widthOfSelf * [self.dataSource numberOfPagesInBookPageView:self], heightOfSelf);
+    if (_navigationDirection == BookPageViewNavigationDirectionLeft) {
+        self.contentOffset = CGPointMake(widthOfSelf * ([self.dataSource numberOfPagesInBookPageView:self] - 1), 0);
+    } else {
+        NSLog(@"Right");
+    }
+    self.pagingEnabled = YES;
 }
 
 @end

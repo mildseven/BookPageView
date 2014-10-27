@@ -21,10 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _bookPageView = [[BookPageView alloc] init];
+    CGFloat viewHight = self.view.frame.size.height;
+    CGRect viewRect = self.view.frame;
+    
+    _bookPageView = [[BookPageView alloc] initWithFrame:viewRect navidationDirection:BookPageViewNavigationDirectionLeft];
     _bookPageView.dataSource = self;
     [self.view addSubview:_bookPageView];
-    [_bookPageView showPageNumber];
 }
 
 - (void)didReceiveMemoryWarning {
